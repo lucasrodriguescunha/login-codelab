@@ -8,9 +8,6 @@ const config: Config = {
     ],
     theme: {
         extend: {
-            background: {
-
-            },
             colors: {
                 primary: 'var(--primary-color)',
                 secondary: 'var(--secondary-color)',
@@ -21,6 +18,15 @@ const config: Config = {
                     40: 'var(--dark-color-40)',
                 },
                 white: 'var(--color-white)',
+            },
+            fontFamily: {
+                'archivo': ['var(--font-archivo)', 'sans-serif'],
+            },
+            width: {
+                '400': '400px',
+            },
+            height: {
+                '528': '528px',
             },
         },
     },
