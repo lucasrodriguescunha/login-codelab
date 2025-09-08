@@ -11,5 +11,7 @@ export interface SocialLoginProps {
 export interface InputFieldProps {
     label: string;
     type: 'text' | 'email' | 'password';
-    placeholder: string;
+    value: string;
+    onChange: (value: string) => void;
+    placeholder?: string;
 }
