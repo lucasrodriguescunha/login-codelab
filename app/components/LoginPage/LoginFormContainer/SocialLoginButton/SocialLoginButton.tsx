@@ -1,14 +1,14 @@
-import {SocialLoginProps} from '@/app/types';
+import { SocialLoginProps } from '@/app/types';
 
-export const SocialLoginButton = ({provider, onLogin}: SocialLoginProps) => {
+export const SocialLoginButton = ({ provider, onLogin }: SocialLoginProps) => {
     return (
         <button
             onClick={onLogin}
-            className="flex items-center justify-center gap-2 border rounded py-2 px-4 hover:bg-gray-100"
+            className='flex items-center justify-center gap-2 border rounded py-2 px-4 hover:bg-gray-100'
         >
             {provider === 'google' && <span>G</span>}
             {provider === 'facebook' && <span>F</span>}
-            Entrar com {provider}
+            Entrar com {provider.charAt(0).toUpperCase() + provider.slice(1)}
         </button>
     );
 };
