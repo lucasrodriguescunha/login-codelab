@@ -6,7 +6,7 @@ import {PasswordInput} from '@/app/components/LoginPage/LoginFormContainer/Login
 
 export const LoginForm = () => {
     return (
-        <form className='flex flex-col gap-6'>
+        <form className='w-sm flex flex-col gap-6 '>
             <EmailInput/>
             <PasswordInput/>
             <SocialLoginButton
