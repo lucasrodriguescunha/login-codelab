@@ -2,12 +2,12 @@ import {InputFieldProps} from '@/app/types';
 
 export const InputField = ({label, type, placeholder}: InputFieldProps) => {
     return (
-        <div className='w-full flex flex-col gap-1'>
-            <label className='text-sm font-medium'>{label}</label>
+        <div className='flex flex-col gap-2'>
+            <label className='text-[#1A202C] text-lg font-normal'>{label}</label>
             <input
                 type={type}
                 placeholder={placeholder}
-                className='bg-[#F7FAFC] w-full border rounded p-2 focus:outline-none focus:ring-2'
+                className='bg-[#F7FAFC] h-12 border border-[#E8E8E8] rounded p-4 focus:outline-none focus:border-[#1E9E6A]'
             />
         </div>
     );
