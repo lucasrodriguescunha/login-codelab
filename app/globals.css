@@ -6,12 +6,16 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary-color: #1E9E6A;
-    --secondary-color: #F3FFF2;
-    --dark-color-10: #1A202C;
-    --dark-color-20: #656769;
-    --dark-color-30: #E8E8E8;
-    --dark-color-40: #F7FAFC;
-    --color-white: #FFFFFF;
+body {
+    font-family: var(--font-archivo), sans-serif;
 }
+
+/*@theme inline {*/
+/*    --primary-color: #1E9E6A;*/
+/*    --secondary-color: #F3FFF2;*/
+/*    --dark-color-10: #1A202C;*/
+/*    --dark-color-20: #656769;*/
+/*    --dark-color-30: #E8E8E8;*/
+/*    --dark-color-40: #F7FAFC;*/
+/*    --color-white: #FFFFFF;*/
+/*}*/
