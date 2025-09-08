@@ -1,5 +1,5 @@
-import {LoginIllustration} from "@/app/components/LoginPage/LoginIllustration/LoginIllustration";
-import {LoginFormContainer} from "@/app/components/LoginPage/LoginFormContainer/LoginFormContainer";
+import {LoginIllustration} from '@/app/components/LoginPage/LoginIllustration/LoginIllustration';
+import {LoginFormContainer} from '@/app/components/LoginPage/LoginFormContainer/LoginFormContainer';
 
 export const LoginPage = () => {
     return (
@@ -8,4 +8,4 @@ export const LoginPage = () => {
             <LoginFormContainer/>
         </div>
     );
-}
+};
