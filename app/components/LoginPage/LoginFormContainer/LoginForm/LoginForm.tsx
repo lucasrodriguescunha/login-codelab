@@ -5,6 +5,7 @@ import {EmailInput} from '@/app/components/LoginPage/LoginFormContainer/LoginFor
 import {PasswordInput} from '@/app/components/LoginPage/LoginFormContainer/LoginForm/PasswordInput';
 import {RememberMeCheckbox} from '@/app/components/LoginPage/LoginFormContainer/LoginForm/RememberMeCheckbox';
 import {SignInButton} from '@/app/components/LoginPage/LoginFormContainer/SignInButton/SignInButton';
+import {SignUpSection} from '@/app/components/LoginPage/LoginFormContainer/SignUpSection/SignUpSection';
 
 export const LoginForm = () => {
     return (
@@ -18,6 +19,7 @@ export const LoginForm = () => {
                 onLogin={function (): void {
                     console.log(`Login realizado com com sucesso!`);
                 }}/>
+            <SignUpSection/>
         </form>
     );
 };
