@@ -10,6 +10,6 @@ export interface SocialLoginProps {
 
 export interface InputFieldProps {
     label: string;
-    type: 'text' | 'email' | 'password';
+    type: 'email' | 'password';
     placeholder?: string;
 }
