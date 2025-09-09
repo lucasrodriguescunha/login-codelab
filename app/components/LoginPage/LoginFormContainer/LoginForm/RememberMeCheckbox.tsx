@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const RememberMeCheckbox = () => {
     return (
-        <div className='flex items-center justify-between'>
+        <div className='flex items-center justify-between pb-6'>
             <div className='flex items-center gap-2'>
                 <input
                     type='radio'
