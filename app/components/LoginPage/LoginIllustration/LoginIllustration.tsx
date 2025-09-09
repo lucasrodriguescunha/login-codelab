@@ -5,7 +5,6 @@ export const LoginIllustration = () => {
         <>
             <div className='bg-[#F3FFF2] h-screen flex items-center justify-center'>
                 <Image
-                    className='object-center'
                     src='/illustration.png'
                     alt='Imagem de ilustração'
                     width={500}
