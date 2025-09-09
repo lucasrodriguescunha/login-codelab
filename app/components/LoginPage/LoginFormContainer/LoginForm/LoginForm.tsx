@@ -4,6 +4,7 @@ import {SocialLoginButton} from '@/app/components/LoginPage/LoginFormContainer/S
 import {EmailInput} from '@/app/components/LoginPage/LoginFormContainer/LoginForm/EmailInput';
 import {PasswordInput} from '@/app/components/LoginPage/LoginFormContainer/LoginForm/PasswordInput';
 import {RememberMeCheckbox} from '@/app/components/LoginPage/LoginFormContainer/LoginForm/RememberMeCheckbox';
+import {SignInButton} from '@/app/components/LoginPage/LoginFormContainer/SignInButton/SignInButton';
 
 export const LoginForm = () => {
     return (
@@ -11,6 +12,7 @@ export const LoginForm = () => {
             <EmailInput/>
             <PasswordInput/>
             <RememberMeCheckbox/>
+            <SignInButton/>
             <SocialLoginButton
                 provider={'google'}
                 onLogin={function (): void {
