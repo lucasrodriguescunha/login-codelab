@@ -1,7 +1,4 @@
-interface GoogleIconProps {
-    size?: number;
-    className?: string;
-}
+import {GoogleIconProps} from '@/app/types';
 
 export const GoogleIcon = ({size = 20, className = ''}: GoogleIconProps) => {
     return (
