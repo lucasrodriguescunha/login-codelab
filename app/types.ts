@@ -13,3 +13,12 @@ export interface InputFieldProps {
     type: 'email' | 'password';
     placeholder?: string;
 }
+
+export interface GoogleIconProps {
+    size?: number;
+    className?: string;
+}
+
+export interface LoginIllustrationProps {
+    className?: string;
+}
