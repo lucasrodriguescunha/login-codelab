@@ -12,13 +12,13 @@ export const RememberMeCheckbox = () => {
                 />
                 <label
                     htmlFor='remember-me'
-                    className='text-[#1A202C] text-base font-medium'
+                    className='text-[#1A202C] text-sm md:text-base font-medium'
                 >
                     Lembre de mim
                 </label>
             </div>
             <Link
-                className='text-[#1E9E6A] text-base font-medium cursor-pointer'
+                className='text-[#1E9E6A] text-sm md:text-base font-medium cursor-pointer'
                 href=''
             >
                 Esqueceu sua senha?
