@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import {LoginIllustrationProps} from '@/app/types';
 
-export const LoginIllustration = ({className}: LoginIllustrationProps) => {
+export const LoginIllustration = () => {
     return (
-        <div className={`bg-[#F3FFF2] h-screen flex items-center justify-center ${className || ''}`}>
+        <div className="bg-[#F3FFF2] min-h-screen flex items-center justify-center">
             <Image
                 src='/illustration.png'
                 alt='Imagem de ilustração'
