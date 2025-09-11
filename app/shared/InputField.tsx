@@ -3,7 +3,7 @@ import {InputFieldProps} from '@/app/types';
 export const InputField = ({label, type, placeholder}: InputFieldProps) => {
     return (
         <div className='flex flex-col gap-2'>
-            <label className='text-[#1A202C] text-lg font-normal'>{label}</label>
+            <label className='text-[#1A202C] text-sm md:text-lg font-normal'>{label}</label>
             <input
                 type={type}
                 placeholder={placeholder}
