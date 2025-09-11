@@ -9,7 +9,7 @@ import {SignUpSection} from '@/app/components/LoginPage/LoginFormContainer/SignU
 
 export const LoginForm = () => {
     return (
-        <form className='w-sm flex flex-col gap-6'>
+        <form className='w-xs md:w-sm flex flex-col gap-6'>
             <EmailInput/>
             <PasswordInput/>
             <RememberMeCheckbox/>
