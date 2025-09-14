@@ -4,7 +4,14 @@
  */
 
 import type {Config} from 'jest';
+import nextJest from 'next/jest.js';
 
+const createJestConfig = nextJest({
+    // Provide the path to your Next.js app to load next.config.js and .env files
+    dir: './',
+});
+
+// Add any custom config to be passed to Jest
 const config: Config = {
     // All imported modules in your tests should be mocked automatically
     // automock: false,
@@ -104,7 +111,7 @@ const config: Config = {
     // notifyMode: "failure-change",
 
     // A preset that is used as a base for Jest's configuration
-    // preset: undefined,
+    preset: 'ts-jest',
 
     // Run tests from one or more projects
     // projects: undefined,
@@ -139,7 +146,7 @@ const config: Config = {
     // setupFiles: [],
 
     // A list of paths to modules that run some code to configure or set up the testing framework before each test
-    // setupFilesAfterEnv: [],
+    setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 
     // The number of seconds after which a test is considered as slow and reported as such in the results.
     // slowTestThreshold: 5,
@@ -157,10 +164,10 @@ const config: Config = {
     // testLocationInResults: false,
 
     // The glob patterns Jest uses to detect test files
-    // testMatch: [
-    //   "**/__tests__/**/*.?([mc])[jt]s?(x)",
-    //   "**/?(*.)+(spec|test).?([mc])[jt]s?(x)"
-    // ],
+    testMatch: [
+        "**/__tests__/**/*.?([mc])[jt]s?(x)",
+        "**/?(*.)+(spec|test).?([mc])[jt]s?(x)"
+    ],
 
     // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
     // testPathIgnorePatterns: [
@@ -177,7 +184,9 @@ const config: Config = {
     // testRunner: "jest-circus/runner",
 
     // A map from regular expressions to paths to transformers
-    // transform: undefined,
+    transform: {
+        '^.+\\.(ts|tsx)$': 'ts-jest',
+    },
 
     // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
     // transformIgnorePatterns: [
@@ -198,4 +207,5 @@ const config: Config = {
     // watchman: true,
 };
 
-export default config;
+// createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
+export default createJestConfig(config);
